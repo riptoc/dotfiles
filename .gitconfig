@@ -1,0 +1,16 @@
+[include]
+	path = ~/.gitconfig.local # Username, email, etc.
+
+[color]
+	branch = auto
+  diff = auto
+  interactive = auto
+  status = auto
+  ui = auto
+	
+[push]
+	default = simple
+	
+[alias]
+	# http://www.jukie.net/bart/blog/pimping-out-git-log
+	lg = log --graph --all --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold blue)%an%Creset %C(yellow)%d%Creset'

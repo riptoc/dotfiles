@@ -1,0 +1,64 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/nick/Programming/Learning/C/" . "Shell/")
+ ("/home/nick/Projects/" . "Notes/")
+ ("/home/nick/.dotfiles/" . "i3/")
+ ("/home/" . "nick/")
+ ("/" . "home/")
+ ("/home/nick/Programming/Learning/" . "C/")
+ ("/home/nick/Programming/" . "Learning/")
+ ("/home/nick/" . "Projects/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/nick/Projects/"
+ "/home/nick/Projects/Notes/"
+ "/home/nick/"
+ "/home/nick/Programming/Learning/C/Shell/"
+ "/home/nick/Programming/Learning/C/CPL_Book/"
+ "/home/nick/.dotfiles/i3/"
+ "/home/nick/Programming/Learning/C/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "fresh_install.sh"
+ "C_Programming_Language.org"
+ ".emacs"
+ "main.c"
+ "TempConvert.c"
+ "Character_In_Out.c"
+ "config"
+ "FtoC.c"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/nick/Projects/" (23871 20439 721630 384000) "../" "Notes/" "./" "fresh_install.sh")
+
+ ("/home/nick/" (23871 20527 726100 729000) ".zsh_history" ".zcompdump" ".pki/" ".emacs.d/" ".Xmodmap" ".zshrc" "Qt/" ".emacs" ".megaCmd/" ".ICEauthority" ".dotfiles/" ".gtkrc-2.0" ".bash_history" ".pylint.d/" ".gitconfig" ".vim/" ".sudo_as_admin_successful" "VirtualBox VMs/" ".ssh/" "Music/" ".fonts/" ".tooling/" ".java/" ".dbus/" "Desktop/" ".directory" ".viminfo" "Videos/" "../" ".selected_editor" "Public/" ".terminfo/" ".vscode/" "./" ".p2/" "Templates/" ".android/" "Programming/" ".path" ".vscode-cpptools/" ".profile" ".cache/" ".mozilla/" "Downloads/" "Wargames/" ".zshrc-old" ".oh-my-zsh/" "Documents/" "IdeaProjects/" ".bash_logout" ".gnupg/" ".icons/" "#TUTORIAL#" ".bashrc" "Tools/" ".config/" "Projects/" ".backup" ".npm/" "Pictures/" "TUTORIAL" "snap/" ".zcompdump-nick-acer-5.5.1" ".atom/" ".fehbg" ".local/" ".mono/" ".eclipse/" ".thunderbird/" ".v8flags.6.8.275.32-node.12.e2e42a07550863f8b67f5eb252581f6d.json" ".swt/" ".lesshst" ".IdeaIC2019.1/" ".emacs~" "bin/" ".python_history" ".emacs-backups/" ".gconf/")
+
+ ("/home/nick/Projects/Notes/" (23870 82 360823 352000) "../" "./" ".git/" "C_Programming_Language.org")
+
+ ("/home/nick/Programming/Learning/C/Shell/" (23870 9331 934839 119000) "../" "main.c" "./")
+
+ ("/home/nick/Programming/Learning/C/CPL_Book/" (23869 50613 5255 480000) "Character_In_Out.c" "../" "./" "TempConvert.c" "a.out")
+
+ ("/home/nick/Programming/Learning/C/" (23869 51406 668903 112000) "../" "./" "CPL_Book/" "Shell/")
+
+ ("/home/nick/.dotfiles/i3/" (23868 58536 752829 85000) "config" "../" "./" "toggletouchpad.sh" "i3blocks.conf")
+
+ ("/home/nick/.dotfiles/" (23867 48019 414653 921000) ".Xmodmap" "README.md" "emacs/" "git/" ".gitignore" "i3/" "nvim/" "../" "vscode/" "./" ".git/" "zsh/")
+
+ ("/home/" (23803 62105 757188 839000) "../" "./" "nick/")
+
+ ("/home/nick/Programming/Learning/" (23847 38147 667373 150000) "Django/" "lorem.txt" "SentdexLessons/" "test.py.bak" "C/" "Javascript/" "../" "./" "LiveOverflow/" "Codewars/" "test.py" "Udemy/" "C++/" "PythonChallenge/" "AtBS/" "Java/")
+
+ ("/home/nick/Programming/" (23856 32530 290793 375000) "Learning/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
