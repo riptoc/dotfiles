@@ -33,8 +33,5 @@ alias vrc="nvim ~/.config/nvim/init.vim"
 alias togglecaps="xdotool key Caps_Lock"
 alias ppalist="grep -r --include '*.list' '^deb ' /etc/apt/sources.list /etc/apt/sources.list.d/"
 
-# Dotfiles
-alias dots='/usr/bin/git --git-dir=$HOME/Dotfiles/ --work-tree=$HOME'
-
 # Typos
 alias claer="clear"

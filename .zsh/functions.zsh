@@ -3,18 +3,18 @@
 ##########################
 
 # Print path in a nicer format
-function PATHs() {
+PATHs() {
     printf '%s$PATH:%s\n' "$(tput bold)" "$(tput sgr0)"
     echo "$PATH" | tr ':' '\n'
 }
 
 # Create a new directory and enter it
-function mc () {
+mc () {
   mkdir -p "$@" && cd "$@"
 }
 
 # Prettier man pages
-function man() {
+man() {
   env \
     LESS_TERMCAP_mb=$(printf "\e[1;31m") \
     LESS_TERMCAP_md=$(printf "\e[1;31m") \
@@ -24,4 +24,8 @@ function man() {
     LESS_TERMCAP_ue=$(printf "\e[0m") \
     LESS_TERMCAP_us=$(printf "\e[1;32m") \
       man "$@"
+}
+
+dots() {
+    /usr/bin/git --git-dir=$HOME/Dotfiles/ --work-tree=$HOME $@
 }
