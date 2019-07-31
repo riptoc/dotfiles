@@ -9,7 +9,7 @@ export ZSH="$HOME/.oh-my-zsh"
 ZSH_THEME="fishyrussell" # Currently just symlinked from .dotfiles
 
 # Plugins
-plugins=(git)
+plugins=(git zsh-autosuggestions)
 
 # Command autocorrection off
 unsetopt correct_all
@@ -20,4 +20,3 @@ source $ZSH/oh-my-zsh.sh
 # Includes
 source ~/.zsh/functions.zsh
 source ~/.zsh/aliases.zsh
-
