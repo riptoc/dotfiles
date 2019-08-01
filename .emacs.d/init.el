@@ -19,7 +19,6 @@
    [default default default italic underline success warning error])
  '(custom-enabled-themes (quote (misterioso)))
  '(global-display-line-numbers-mode t)
- '(inhibit-startup-screen t)
  '(package-selected-packages
    (quote
     (markdown-mode csv-mode yasnippet-snippets yasnippet move-text powerline flycheck auto-complete)))
@@ -49,7 +48,7 @@
 (global-unset-key (kbd "C-z"))
 
 ;; Disable stuff nobody needs
-(customize-set-variable 'inhibit-startup-screen t) ; no splash screen on start
+;; (customize-set-variable 'inhibit-startup-screen t) ; no splash screen on start
 (tool-bar-mode -1)   ; no tool bar with icons
 (scroll-bar-mode -1) ; no scroll bars
 (menu-bar-mode -1)   ; no menu bar
