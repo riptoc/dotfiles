@@ -75,9 +75,7 @@
 (setq ido-everywhere t)
 (ido-mode 1)
 ;; Display certain extensions first in minibuffer
-(setq ido-file-extensions-order '(".emacs" ".org" ".c" ".h" ".cpp"))
-
-;; Add new lines with C-n at last line
+(setq ido-file-extensions-order '(".el" ".lua" ".py" ".org" ".c" ".h" ".cpp"))
 
 (provide 'init)
 ;;; init.el ends here
