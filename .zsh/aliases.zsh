@@ -6,8 +6,7 @@
 alias zshconfig="emacs ~/.zsh/.zshrc"
 
 # Use exa instead of ls
-alias ls="exa"
-alias la="exa -abghl --git"
+alias ls="exa --group-directories-first -h --git --time-style=long-iso"
 alias tree="exa -lahT --level=3 -I .git"
 
 # Source zshrc file
@@ -25,6 +24,7 @@ alias gd='git diff'
 alias gco='git checkout '
 
 # General/Other
+alias a="sudo apt"
 alias v="nvim"
 alias vim="nvim"
 alias vpn="nordvpn"
