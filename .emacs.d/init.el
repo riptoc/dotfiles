@@ -71,7 +71,7 @@
 (setq backup-directory-alist `(("." . "~/.emacs-backups")))
 
 ;; Font
-(set-face-font 'default "Inconsolata-12")
+(set-face-font 'default "Source\ Code\ Pro:pixelsize=14:antialias=natural")
 
 ;; Trim whitespace
 (add-hook 'before-save-hook 'delete-trailing-whitespace)

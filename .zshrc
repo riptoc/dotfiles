@@ -6,7 +6,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Custom theme
-ZSH_THEME="fishyrussell" # Currently just symlinked from .dotfiles
+ZSH_THEME="agnoster"
 
 # Plugins
 plugins=(git zsh-autosuggestions)
