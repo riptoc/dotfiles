@@ -535,17 +535,7 @@ client.connect_signal("manage", function (c)
 end)
 
 -- Autorun programs
-autorun = true
-autorunApps =
-{
-      "firefox",
-      "remapcaps"
-}
-if autorun then
-   for app = 1, #autorunApps do
-       awful.util.spawn(autorunApps[app])
-   end
-end
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
 client.connect_signal("request::titlebars", function(c)
