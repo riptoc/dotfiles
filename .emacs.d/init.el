@@ -15,6 +15,7 @@
 
 (setq my-packages
       '(markdown-mode
+	rainbow-mode
 	csv-mode
 	lua-mode
 	yasnippet-snippets
@@ -39,6 +40,12 @@
 (require 'move-text)
 (move-text-default-bindings)
 ;;
+
+;; Global rainbow-mode
+(define-globalized-minor-mode my-global-rainbow-mode rainbow-mode
+  (lambda () (rainbow-mode 1)))
+
+(my-global-rainbow-mode 1)
 
 ;; Global flycheck
 (add-hook 'after-init-hook #'global-flycheck-mode)
@@ -99,5 +106,5 @@
  '(global-display-line-numbers-mode t)
  '(package-selected-packages
    (quote
-    (lua-mode yasnippet-snippets powerline move-text markdown-mode flycheck csv-mode auto-complete))))
+    (rainbow-mode lua-mode yasnippet-snippets powerline move-text markdown-mode flycheck csv-mode auto-complete))))
 ;;(setq next-line-add-newlines t)

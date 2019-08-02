@@ -52,7 +52,7 @@ end
 beautiful.init("~/.config/awesome/theme.lua")
 
 -- This is used later as the default terminal and editor to run.
-terminal = "x-terminal-emulator"
+terminal = "urxvt"
 editor = os.getenv("EDITOR") or "emacs"
 editor_cmd = terminal .. " -e " .. editor
 
@@ -331,7 +331,7 @@ globalkeys = gears.table.join(
    awful.key({ modkey },            "r",     function () awful.screen.focused().mypromptbox:run() end,
       {description = "run prompt", group = "launcher"}),
 
-   awful.key({ modkey }, "x",
+   awful.key({ modkey }, "z",
       function ()
 	 awful.prompt.run {
 	    prompt       = "Run Lua code: ",
@@ -356,7 +356,9 @@ clientkeys = gears.table.join(
    awful.key({ modkey, "Shift"   }, "q",      function (c) c:kill()                         end,
       {description = "close", group = "client"}),
    awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ,
-      {description = "toggle floating", group = "client"}),
+   --    {description = "toggle floating", group = "client"}),
+   -- awful.key({ modkey,           }, "x",  awful.spawn("slock")                                 ,
+      {description = "lock_screen", group = "client"}),
    awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
       {description = "move to master", group = "client"}),
    awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
