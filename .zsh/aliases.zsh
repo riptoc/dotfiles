@@ -32,6 +32,7 @@ alias cht="cht.sh"
 alias vrc="nvim ~/.config/nvim/init.vim"
 alias togglecaps="xdotool key Caps_Lock"
 alias ppalist="grep -r --include '*.list' '^deb ' /etc/apt/sources.list /etc/apt/sources.list.d/"
+alias xup="xrdb ~/.Xresources"
 
 # Typos
 alias claer="clear"

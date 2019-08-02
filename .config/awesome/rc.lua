@@ -270,6 +270,10 @@ globalkeys = gears.table.join(
    awful.key({ modkey,           }, "w", function () mymainmenu:show() end,
       {description = "show main menu", group = "awesome"}),
 
+   -- Lock
+   awful.key({ modkey }, "x", function () awful.spawn{ "slock" } end,
+      {description = "Lock the screen", group = "screen"}),
+
    -- Layout manipulation
    awful.key({ modkey, "Shift"   }, "j", function () awful.client.swap.byidx(  1)    end,
       {description = "swap with next client by index", group = "client"}),
@@ -293,10 +297,12 @@ globalkeys = gears.table.join(
    -- Standard program
    awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
       {description = "open a terminal", group = "launcher"}),
+   awful.key({ modkey,           }, "e", function () awful.spawn("emacs") end,
+      {description = "launch emacs", group = "launcher"}),
+   awful.key({ modkey,           }, "n", function () awful.spawn("nautilus") end,
+      {description = "launch nautilus", group = "launcher"}),
    awful.key({ modkey, "Control" }, "r", awesome.restart,
       {description = "reload awesome", group = "awesome"}),
-   awful.key({ modkey, "Shift"   }, "e", awesome.quit,
-      {description = "quit awesome", group = "awesome"}),
 
    awful.key({ modkey,           }, "l",     function () awful.tag.incmwfact( 0.05)          end,
       {description = "increase master width factor", group = "layout"}),
@@ -356,9 +362,7 @@ clientkeys = gears.table.join(
    awful.key({ modkey, "Shift"   }, "q",      function (c) c:kill()                         end,
       {description = "close", group = "client"}),
    awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ,
-   --    {description = "toggle floating", group = "client"}),
-   -- awful.key({ modkey,           }, "x",  awful.spawn("slock")                                 ,
-      {description = "lock_screen", group = "client"}),
+      {description = "toggle floating", group = "client"}),
    awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end,
       {description = "move to master", group = "client"}),
    awful.key({ modkey,           }, "o",      function (c) c:move_to_screen()               end,
@@ -391,6 +395,12 @@ clientkeys = gears.table.join(
       end ,
       {description = "(un)maximize horizontally", group = "client"})
 )
+
+-- Multimedia control keys {{{
+awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn("pactl set-sink-volume 0 +5%") end)
+awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn("pactl set-sink-volume 0 +5%") end)
+awful.key({}, "XF86AudioMute", function() awful.spawn("pactl set-sink-mute 0 toggle") end)
+-- }}}
 
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it work on any keyboard layout.
@@ -534,7 +544,7 @@ client.connect_signal("manage", function (c)
 			 end
 end)
 
--- Autorun programs
+ -- Autorun programs
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
