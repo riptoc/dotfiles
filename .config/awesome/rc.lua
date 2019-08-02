@@ -538,7 +538,8 @@ end)
 autorun = true
 autorunApps =
 {
-   "firefox",
+      "firefox",
+      "remapcaps"
 }
 if autorun then
    for app = 1, #autorunApps do

@@ -26,6 +26,12 @@ man() {
       man "$@"
 }
 
+# Open in Emacs
+e() {
+    emacs --no-splash $@ &
+}
+
+# Dotfiles git function
 dots() {
     /usr/bin/git --git-dir=$HOME/Dotfiles/ --work-tree=$HOME $@
 }
