@@ -6,7 +6,10 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # Custom theme
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
+
+# Powerlevel10k Prompt
+[[ -f ~/.p10k.zsh ]] && source ~/.p10k.zsh
 
 # Plugins
 plugins=(git zsh-autosuggestions)
