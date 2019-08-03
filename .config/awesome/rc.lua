@@ -396,12 +396,6 @@ clientkeys = gears.table.join(
       {description = "(un)maximize horizontally", group = "client"})
 )
 
--- Multimedia control keys {{{
-awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn("pactl set-sink-volume 0 +5%") end)
-awful.key({}, "XF86AudioRaiseVolume", function() awful.spawn("pactl set-sink-volume 0 +5%") end)
-awful.key({}, "XF86AudioMute", function() awful.spawn("pactl set-sink-mute 0 toggle") end)
--- }}}
-
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it work on any keyboard layout.
 -- This should map on the top row of your keyboard, usually 1 to 9.

@@ -9,4 +9,4 @@ autorun() {
 
 autorun firefox
 autorun remapcaps
-autorun cmatrix
+autorun multimedia_keys
