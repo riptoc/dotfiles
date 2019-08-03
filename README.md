@@ -7,13 +7,13 @@ Set up as a bare repo on the system to track these files.
 **These are a work in progress, do not expect perfection**
 
 ## Included in this repo
-
 + Awesome WM setup
 + nvim settings (don't use this much anymore)
 + vscode settings (don't use this much anymore)
 + zsh settings
-+ emacs settings
++ emacs (spacemacs) settings
 + some git settings
-+ Quick Xmodmap script to make Caps Lock another Esc key
++ setup scripts
++ urxvt settings
 
-Feel free to make suggestions for improvement.
+Feel free to make suggestions for improvement 🙂
