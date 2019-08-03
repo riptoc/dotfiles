@@ -1,6 +1,6 @@
 !--  URxvt settings  --
 ! Set font
-URxvt.font: xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true,xft:Source\ Code\ Pro\ Medium:pixelsize=13:antialias=true:hinting=true
+URxvt.font: xft:Source Code Pro Medium:pixelsize=13:antialias=true:hinting=true
 URxvt.scrollBar: false
 ! Set colours
 URxvt.background:   [97]#282a36
