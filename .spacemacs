@@ -305,6 +305,8 @@ executes.
  This function is mostly useful for variables that need to be set
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
+  ;; Bugfix for elpa packages
+  (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
   )
 
 (defun dotspacemacs/user-config ()
