@@ -23,3 +23,6 @@ source $ZSH/oh-my-zsh.sh
 # Includes
 source ~/.zsh/functions.zsh
 source ~/.zsh/aliases.zsh
+
+# Vi mode
+bindkey -v
