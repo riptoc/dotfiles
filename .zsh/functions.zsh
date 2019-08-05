@@ -32,7 +32,7 @@ e() {
 }
 
 # Dotfiles git function
-dots()  { /usr/bin/git --git-dir=$HOME/Dotfiles/ --work-tree=$HOME $@ }
-dotsa() { /usr/bin/git --git-dir=$HOME/Dotfiles/ --work-tree=$HOME add $@ }
-dotsc() { /usr/bin/git --git-dir=$HOME/Dotfiles/ --work-tree=$HOME commit $@ }
-dotss() { /usr/bin/git --git-dir=$HOME/Dotfiles/ --work-tree=$HOME status }
+dots()  { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@ }
+dotsa() { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $@ }
+dotsc() { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit $@ }
+dotss() { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status }
