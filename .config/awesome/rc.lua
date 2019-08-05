@@ -318,7 +318,7 @@ globalkeys = my_table.join(
             if client.focus then client.focus:raise() end
         end,
         {description = "focus right", group = "client"}),
-    awful.key({ modkey,           }, "w", function () awful.util.mymainmenu:show() end,
+    awful.key({ modkey, "Shift"   }, "w", function () awful.util.mymainmenu:show() end,
               {description = "show main menu", group = "awesome"}),
 
     -- Layout manipulation
@@ -377,8 +377,12 @@ globalkeys = my_table.join(
               {description = "reload awesome", group = "awesome"}),
     awful.key({ modkey,           }, "e", function () awful.spawn("emacs") end,
       {description = "launch emacs", group = "launcher"}),
-    awful.key({ modkey,           }, "n", function () awful.spawn("nautilus") end,
-      {description = "launch nautilus", group = "launcher"}),
+    awful.key({ modkey,           }, "f", function () awful.spawn(terminal.." -e ranger") end,
+      {description = "launch ranger", group = "launcher"}),
+    awful.key({ modkey,           }, "p", function () awful.spawn(terminal.." -e htop") end,
+      {description = "launch htop", group = "launcher"}),
+    awful.key({ modkey,           }, "w", function () awful.spawn("firefox") end,
+      {description = "launch firefox", group = "launcher"}),
     awful.key({ altkey, "Shift"   }, "l",     function () awful.tag.incmwfact( 0.05)          end,
               {description = "increase master width factor", group = "layout"}),
     awful.key({ altkey, "Shift"   }, "h",     function () awful.tag.incmwfact(-0.05)          end,
@@ -549,7 +553,7 @@ globalkeys = my_table.join(
 clientkeys = my_table.join(
     awful.key({ altkey, "Shift"   }, "m",      lain.util.magnify_client,
               {description = "magnify client", group = "client"}),
-    awful.key({ modkey,           }, "f",
+    awful.key({ modkey, "Shift"   }, "f",
         function (c)
             c.fullscreen = not c.fullscreen
             c:raise()
