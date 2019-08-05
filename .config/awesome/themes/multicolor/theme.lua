@@ -316,7 +316,7 @@ function theme.at_screen_connect(s)
             --fsicon,
             --theme.fs.widget,
             -- weathericon,
-            theme.weather.widget,
+            -- theme.weather.widget,
             tempicon,
             temp.widget,
             baticon,
