@@ -59,6 +59,9 @@ set secure
 nnoremap ; :
 nnoremap : ;
 
+" ciw by default
+nnoremap cw ciw
+
 " Change window with comma
 noremap , <C-w><C-w>
 
@@ -92,21 +95,6 @@ nnoremap <C-L> :nohl<CR><C-L>
 inoremap {<CR> {<CR>}<Esc>ko
 inoremap [<CR> [<CR>]<Esc>ko
 inoremap (<CR> (<CR>)<Esc>ko
-
-
-
-" Get rid of arrow keys ---------------------------------------------------------------
-"
-
-
-" noremap <Up> <nop>
-" inoremap <Up> <nop>
-" noremap <Down> <nop>
-" inoremap <Down> <nop>
-" noremap <Left> <nop>
-" inoremap <Left> <nop>
-" noremap <Right> <nop>
-" inoremap <Right> <nop>
 
 
 
