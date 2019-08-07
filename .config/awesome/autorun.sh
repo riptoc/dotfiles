@@ -13,5 +13,7 @@ smart_run() {
 # Default programs
 smart_run firefox
 xbindkeys
+compton
+compton-trans
 # Custom scripts
 ~/bin/remapcaps
