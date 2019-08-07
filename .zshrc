@@ -24,5 +24,6 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/functions.zsh
 source ~/.zsh/aliases.zsh
 
-# Vi mode
-bindkey -v
+# Neofetch
+echo "\n"
+neofetch
