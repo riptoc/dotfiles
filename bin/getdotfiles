@@ -1,0 +1,20 @@
+#!/usr/bin/env bash
+
+# A quick script to pull down my dotfiles into a bare repo (~/.dotfiles) and
+# set it up ready to be used.
+
+dots() {
+  /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@
+}
+
+if [ ! -d $HOME/.dotfiles ] && [ ! -d $HOME/.tmp-dots ]; then
+  printf "\nSetting up dotfiles\n"
+  echo ".dotfiles" >> $HOME/.gitignore
+  git clone --separate-git-dir=$HOME/.dotfiles https://github.com/riptoc/dotfiles.git $HOME/.tmp-dots
+  rsync --recursive --verbose --exclude '.git' $HOME/.tmp-dots/ $HOME/
+  rm -r $HOME/.tmp-dots
+  dots config status.showUntrackedFiles no
+  printf "\nDotfiles set up!\n"
+else
+  printf "Please remove ~/.dotfiles and/or ~/.tmp-dotfiles directories.\n"
+fi
