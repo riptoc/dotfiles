@@ -24,9 +24,6 @@ source $ZSH/oh-my-zsh.sh
 source ~/.zsh/functions.zsh
 source ~/.zsh/aliases.zsh
 
-# PATH
-PATH=$PATH:~/bin
-
 # Neofetch
 echo "\n"
 neofetch
