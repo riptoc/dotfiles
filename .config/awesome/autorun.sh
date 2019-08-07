@@ -10,11 +10,8 @@ smart_run() {
   fi
 }
 
-# Some of these will rely on PATH being set correctly
-# to include ~/bin
-
 # Default programs
 smart_run firefox
 xbindkeys
-# Custom scripts, located in ~/bin
-remapcaps
+# Custom scripts
+~/bin/remapcaps
