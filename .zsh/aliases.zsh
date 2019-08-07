@@ -15,14 +15,6 @@ alias zsrc="source ~/.zshrc"
 # Quick compile c file
 alias c="gcc -m64 -Wall"
 
-# Git aliases
-alias gs='git status '
-alias ga='git add '
-alias gb='git branch '
-alias gc='git commit'
-alias gd='git diff'
-alias gco='git checkout '
-
 # General/Other
 alias a="sudo apt"
 alias v="nvim"
