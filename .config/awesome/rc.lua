@@ -383,8 +383,6 @@ globalkeys = my_table.join(
       {description = "launch ranger", group = "launcher"}),
     awful.key({ modkey,           }, "p", function () awful.spawn(terminal.." -e htop") end,
       {description = "launch htop", group = "launcher"}),
-    awful.key({ modkey,           }, "w", function () awful.spawn("firefox") end,
-      {description = "launch firefox", group = "launcher"}),
     awful.key({ altkey, "Shift"   }, "l",     function () awful.tag.incmwfact( 0.05)          end,
               {description = "increase master width factor", group = "layout"}),
     awful.key({ altkey, "Shift"   }, "h",     function () awful.tag.incmwfact(-0.05)          end,
@@ -510,7 +508,7 @@ globalkeys = my_table.join(
               {description = "copy gtk to terminal", group = "hotkeys"}),
 
     -- User programs
-    awful.key({ modkey }, "q", function () awful.spawn(browser) end,
+    awful.key({ modkey }, "w", function () awful.spawn(browser) end,
               {description = "run browser", group = "launcher"}),
     awful.key({ modkey }, "a", function () awful.spawn(guieditor) end,
               {description = "run gui editor", group = "launcher"}),
