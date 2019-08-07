@@ -705,7 +705,7 @@ client.connect_signal("manage", function (c)
     end
 end)
 
--- Autorun programs
+-- Autorun programs when awesome starts
 awful.spawn.with_shell("~/.config/awesome/autorun.sh")
 
 -- Add a titlebar if titlebars_enabled is set to true in the rules.
