@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Script to install my frequently used software, nothing special.
+
+sudo pacman -S --needed firefox code vlc neofetch slock ttf-font-awesome vim neovim\
+                        emacs ttf-hack adobe-source-code-pro-fonts xcape exa compton\
+                        p7zip xbindkeys veracrypt xdotool rlwrap ranger rsync\
+                        the_silver_searcher rxvt-unicode
+yay -S --needed nordvpn-bin
