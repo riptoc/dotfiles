@@ -33,7 +33,7 @@ syntax on
 set encoding=utf-8
 set number relativenumber
 set numberwidth=4
-set splitbelow 
+set splitbelow
 set splitright
 set shiftwidth=2
 set expandtab
@@ -95,18 +95,18 @@ inoremap (<CR> (<CR>)<Esc>ko
 
 
 
-" Get rid of naughty keys ---------------------------------------------------------------
+" Get rid of arrow keys ---------------------------------------------------------------
 "
 
 
-noremap <Up> <nop>
-inoremap <Up> <nop>
-noremap <Down> <nop>
-inoremap <Down> <nop>
-noremap <Left> <nop>
-inoremap <Left> <nop>
-noremap <Right> <nop>
-inoremap <Right> <nop>
+" noremap <Up> <nop>
+" inoremap <Up> <nop>
+" noremap <Down> <nop>
+" inoremap <Down> <nop>
+" noremap <Left> <nop>
+" inoremap <Left> <nop>
+" noremap <Right> <nop>
+" inoremap <Right> <nop>
 
 
 
@@ -133,11 +133,14 @@ let g:rainbow_active = 1
 "
 
 
-colors jellybeans
+colors dracula
 let g:airline_theme='tomorrow'
 let g:airline_powerline_fonts = 1
 highlight Comment cterm=italic gui=italic
 
+" Transparent background
+au ColorScheme * hi Normal ctermbg=none guibg=none
+au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 
 
 " Misc ----------------------------------------------------------------------------------
@@ -158,4 +161,3 @@ augroup END
 
 " Copy/paste to/from system clipboard by default
 set clipboard=unnamedplus
-
