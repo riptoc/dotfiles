@@ -9,7 +9,7 @@
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.fontSize": 12,
   "editor.detectIndentation": false,
-  "editor.fontFamily": "\"Operator Mono Book\", Inconsolata, monospace",
+  "editor.fontFamily": "\"Operator Mono Book\", Hack, Inconsolata, monospace",
   "editor.fontSize": 13,
   "editor.fontLigatures": true,
   "editor.glyphMargin": true,
