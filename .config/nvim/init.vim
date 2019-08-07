@@ -1,6 +1,6 @@
-" Basic setup ---------------------------------------------------------------------------
-"
+" Riptoc's vimrc
 
+" Basic setup {{{
 
 set runtimepath^=~/.vim runtimepath+=~/.vim/after
 let &packpath = &runtimepath
@@ -33,6 +33,7 @@ syntax on
 set encoding=utf-8
 set number relativenumber
 set numberwidth=4
+set foldmethod=marker
 set splitbelow
 set splitright
 set shiftwidth=2
@@ -49,11 +50,9 @@ set noswapfile
 set exrc
 set secure
 
+" }}}
 
-
-" Basic Mappings ------------------------------------------------------------------------
-"
-
+" Basic Mappings {{{
 
 " Easier commands
 nnoremap ; :
@@ -97,10 +96,9 @@ inoremap [<CR> [<CR>]<Esc>ko
 inoremap (<CR> (<CR>)<Esc>ko
 
 
+" }}}
 
-" Plugin settings -----------------------------------------------------------------------
-"
-
+" Plugin settings {{{
 
 " NERDTree
 map <leader>n ;NERDTreeToggle<CR>
@@ -115,11 +113,9 @@ autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in
 " Rainbow Parens
 let g:rainbow_active = 1
 
+" }}}
 
-
-" Theming -------------------------------------------------------------------------------
-"
-
+" Theming {{{
 
 colors dracula
 let g:airline_theme='tomorrow'
@@ -130,10 +126,9 @@ highlight Comment cterm=italic gui=italic
 au ColorScheme * hi Normal ctermbg=none guibg=none
 au ColorScheme myspecialcolors hi Normal ctermbg=red guibg=red
 
+" }}}
 
-" Misc ----------------------------------------------------------------------------------
-"
-
+" Misc {{{
 
 " Disable automatic commenting on newline
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -149,3 +144,5 @@ augroup END
 
 " Copy/paste to/from system clipboard by default
 set clipboard=unnamedplus
+
+" }}}
