@@ -6,4 +6,4 @@ sudo pacman -S --needed firefox code vlc neofetch slock ttf-font-awesome vim neo
                         emacs ttf-hack adobe-source-code-pro-fonts xcape exa compton\
                         p7zip xbindkeys veracrypt xdotool rlwrap ranger rofi rsync\
                         the_silver_searcher rxvt-unicode powerline-fonts compton kitty
-yay -S --needed nordvpn-bin
+yay -S --needed nordvpn-bin ttf-symbola
