@@ -16,8 +16,8 @@ local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
 local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow"
-theme.wallpaper                                 = "~/Pictures/Wallpapers/Space/scukd4Y.jpg"
-theme.font                                      = "Source Code Pro 9"
+theme.wallpaper                                 = "~/Pictures/Wallpapers/saints-city.png"
+theme.font                                      = "Source Code Pro for Powerline 9"
 theme.fg_normal                                 = "#D2C289"
 theme.fg_focus                                  = "#FCE8A4"
 theme.fg_urgent                                 = "#C83F11"
@@ -388,9 +388,9 @@ function theme.at_screen_connect(s)
             wibox.container.background(wibox.container.margin(wibox.widget { baticon, bat.widget, layout = wibox.layout.align.horizontal }, dpi(3), dpi(3)), "#8DAA9A"),
             arrow("#8DAA9A", "#C0C0A2"),
             wibox.container.background(wibox.container.margin(wibox.widget { nil, neticon, net.widget, layout = wibox.layout.align.horizontal }, dpi(3), dpi(3)), "#C0C0A2"),
-            arrow("#C0C0A2", "#777E76"),
-            wibox.container.background(wibox.container.margin(binclock.widget, dpi(4), dpi(8)), "#777E76"),
-            arrow("#777E76", "alpha"),
+            -- arrow("#C0C0A2", "#777E76"),
+            -- wibox.container.background(wibox.container.margin(binclock.widget, dpi(4), dpi(8)), "#777E76"),
+            arrow("#C0C0A2", "alpha"),
             --]]
             s.mylayoutbox,
         },
