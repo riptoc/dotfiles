@@ -2,8 +2,10 @@
 ## Zshrc aliases file ##
 ########################
 
-# Edit this file
-alias zshconfig="emacs ~/.zsh/.zshrc"
+# Edit common files
+alias zshrc="nvim ~/.zshrc"
+alias vimrc="nvim ~/.config/nvim/init.vim"
+alias awmrc="nvim ~/.config/awesome/rc.lua"
 
 # Use exa instead of ls
 alias ls="exa --group-directories-first -h --git --time-style=long-iso"
