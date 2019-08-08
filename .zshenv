@@ -1,4 +1,4 @@
 export PATH=$PATH:~/bin
-export EDITOR="emacs"
+export EDITOR="nvim"
 export TERMINAL="kitty"
 export BROWSER="firefox"
