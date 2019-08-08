@@ -8,7 +8,7 @@ Set up as a bare repo on the system to track these files.
 
 ## Included in this repo
 + Awesome WM setup
-+ nvim settings (don't use this much anymore)
++ nvim settings
 + vscode settings (don't use this much anymore)
 + zsh settings
 + emacs (spacemacs) settings
