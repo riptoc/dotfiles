@@ -26,29 +26,58 @@ Plug 'yggdroot/indentline'
 call plug#end()
 " /Plug
 
+" Syntax highliting
+syntax enable
+" Mapleader
 let mapleader = " "
-set nocompatible
+" Indentation
 filetype plugin indent on
-syntax on
-set encoding=utf-8
-set number relativenumber
-set numberwidth=4
-set foldmethod=marker
-set splitbelow
-set splitright
+set autoindent
+" Tabs
+set tabstop=8
+set softtabstop=2
 set shiftwidth=2
 set expandtab
 set smarttab
-set autoindent
-set smartindent
-set softtabstop=2
+" Make backspace work as expected
+set backspace=indent,eol,start
+" No swap files
+set noswapfile
+set nobackup
+" No octal counting
+set nrformats-=octal
+" Encoding
+set encoding=utf-8
+" Relative line numbers
+set number relativenumber
+set numberwidth=4
+" Folding with markers
+set foldmethod=marker
+" Change default split direction
+set splitbelow
+set splitright
+" Show (partial) command in the last line of the screen.
 set showcmd
+" Completion
 set wildmode=longest,list,full
 set wildmenu
-set noswapfile
 " Allow project (dir) specific vimrc files
 set exrc
 set secure
+" Copy/paste to/from system clipboard by default
+set clipboard=unnamedplus
+" Delete comment character when joining commented lines
+if v:version > 703 || v:version == 703 && has("patch541")
+  set formatoptions+=j
+endif
+" History length
+if &history < 1000
+  set history=1000
+endif
+" Allow color schemes to do bright colors without forcing bold.
+if &t_Co == 8 && $TERM !~# '^linux\|^Eterm'
+  set t_Co=16
+endif
 
 " }}}
 
@@ -109,6 +138,9 @@ let NERDTreeShowHidden=1
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 1 && isdirectory(argv()[0]) && !exists("s:std_in") | exe 'NERDTree' argv()[0] | wincmd p | ene | exe 'cd '.argv()[0] | endif
 
+" Airline
+" Show all buffers when only one tab open
+let g:airline#extensions#tabline#enabled = 1
 
 " Rainbow Parens
 let g:rainbow_active = 1
@@ -141,8 +173,5 @@ augroup line_return
     \     execute 'normal! g`"zvzz' |
     \ endif
 augroup END
-
-" Copy/paste to/from system clipboard by default
-set clipboard=unnamedplus
 
 " }}}
