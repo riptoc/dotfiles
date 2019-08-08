@@ -17,6 +17,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'tpope/vim-surround'
+Plug 'NLKNguyen/papercolor-theme'
 Plug 'tomtom/tcomment_vim'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
@@ -145,11 +146,15 @@ let g:airline#extensions#tabline#enabled = 1
 " Rainbow Parens
 let g:rainbow_active = 1
 
+" TComment
+noremap <leader>c :TComment<CR>
+
 " }}}
 
 " Theming {{{
 
-colors dracula
+set background=light
+colorscheme PaperColor
 let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 highlight Comment cterm=italic gui=italic

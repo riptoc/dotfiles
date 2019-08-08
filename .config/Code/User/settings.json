@@ -42,7 +42,7 @@
   "window.menuBarVisibility": "toggle",
   "window.restoreFullscreen": true,
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Dracula At Night",
+  "workbench.colorTheme": "Paper White",
   "workbench.startupEditor": "newUntitledFile",
   "editor.lineNumbers": "off",
   "editor.mouseWheelZoom": true,
