@@ -88,6 +88,9 @@ endif
 nnoremap ; :
 nnoremap : ;
 
+" Quicker save
+nnoremap <leader>s :w<CR>
+
 " ciw by default
 nnoremap cw ciw
 
