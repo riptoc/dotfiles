@@ -155,7 +155,7 @@ noremap <leader>c :TComment<CR>
 
 set background=light
 colorscheme PaperColor
-let g:airline_theme='dracula'
+let g:airline_theme='papercolor'
 let g:airline_powerline_fonts = 1
 highlight Comment cterm=italic gui=italic
 
