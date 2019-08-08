@@ -1,7 +1,4 @@
 {
-  "[cpp]": {
-    "editor.defaultFormatter": "ms-vscode.cpptools"
-  },
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_style": "LLVM",
   "C_Cpp.default.cppStandard": "c++11",
@@ -9,7 +6,7 @@
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.fontSize": 12,
   "editor.detectIndentation": false,
-  "editor.fontFamily": "\"Operator Mono Book\", Hack, Inconsolata, monospace",
+  "editor.fontFamily": "\"Source Code Pro for Powerline\", Hack, Inconsolata, monospace",
   "editor.fontSize": 13,
   "editor.fontLigatures": true,
   "editor.glyphMargin": true,
@@ -23,11 +20,8 @@
   "editor.wordWrapColumn": 100,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
-  "files.associations": {
-    "*.js": "javascriptreact"
-  },
   "files.exclude": {
-    "**/*.py[co]": true,
+    "**/__pycache__": true,
     "**/.cache": true,
     "**/.coverage": true,
     "**/.DS_Store": true,
@@ -35,7 +29,8 @@
     "**/.mypy_cache": true,
     "**/.pytest_cache": true,
     "**/.venv": true,
-    "**/__pycache__": true
+    "**/.vscode": true,
+    "**/*.py[co]": true
   },
   "files.insertFinalNewline": true,
   "files.trimFinalNewlines": true,
@@ -47,8 +42,15 @@
   "window.menuBarVisibility": "toggle",
   "window.restoreFullscreen": true,
   "window.zoomLevel": 0,
-  "workbench.activityBar.visible": false,
-  "workbench.colorTheme": "Tomorrow Night Operator Mono",
+  "workbench.colorTheme": "Dracula At Night",
   "workbench.startupEditor": "newUntitledFile",
-  "workbench.statusBar.visible": false
+  "editor.lineNumbers": "off",
+  "editor.mouseWheelZoom": true,
+  "editor.renderLineHighlight": "gutter",
+  "editor.quickSuggestionsDelay": 5,
+  "editor.suggest.localityBonus": true,
+  "workbench.statusBar.visible": false,
+  "explorer.sortOrder": "type",
+  "debug.inlineValues": true,
+  "terminal.external.linuxExec": "kitty"
 }
