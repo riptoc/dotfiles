@@ -118,7 +118,7 @@ let g:rainbow_active = 1
 " Theming {{{
 
 colors dracula
-let g:airline_theme='tomorrow'
+let g:airline_theme='dracula'
 let g:airline_powerline_fonts = 1
 highlight Comment cterm=italic gui=italic
 
