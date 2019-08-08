@@ -18,7 +18,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'tpope/vim-surround'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'tomtom/tcomment_vim'
+Plug 'scrooloose/nerdcommenter'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -146,8 +146,15 @@ let g:airline#extensions#tabline#enabled = 1
 " Rainbow Parens
 let g:rainbow_active = 1
 
-" TComment
-noremap <leader>c :TComment<CR>
+" NERDComment
+" Add spaces after comment delimiters by default
+let g:NERDSpaceDelims = 1
+" Use compact syntax for prettified multi-line comments
+let g:NERDCompactSexyComs = 1
+" Allow commenting and inverting empty lines (useful when commenting a region)
+let g:NERDCommentEmptyLines = 1
+" Enable NERDCommenterToggle to check all selected lines is commented or not
+let g:NERDToggleCheckAllLines = 1
 
 " }}}
 
@@ -178,5 +185,8 @@ augroup line_return
     \     execute 'normal! g`"zvzz' |
     \ endif
 augroup END
+
+" Remove whitespace on save
+autocmd BufWritePre * %s/\s\+$//e
 
 " }}}
