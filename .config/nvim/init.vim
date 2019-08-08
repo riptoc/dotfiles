@@ -125,6 +125,8 @@ inoremap {<CR> {<CR>}<Esc>ko
 inoremap [<CR> [<CR>]<Esc>ko
 inoremap (<CR> (<CR>)<Esc>ko
 
+" Toggle wrap
+nnoremap <leader>w :set wrap!<CR>
 
 " }}}
 
