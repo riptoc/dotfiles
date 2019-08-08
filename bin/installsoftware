@@ -7,7 +7,7 @@ sudo pacman -S --needed firefox code vlc neofetch slock ttf-font-awesome vim neo
                         p7zip xbindkeys veracrypt xdotool rlwrap ranger rofi rsync\
                         the_silver_searcher rxvt-unicode powerline-fonts compton kitty\
                         noto-fonts playerctl python-pip ffmpegthumbnailer highlight\
-                        poppler
+                        poppler imagemagick python-pillow
 yay -S --needed nordvpn-bin ttf-symbola
 
 # Install 0h-my-zsh plugins
