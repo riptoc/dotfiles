@@ -39,6 +39,9 @@ Plug 'ryanoasis/vim-devicons'
 call plug#end()
 " /Plug
 
+" True colours
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+set termguicolors
 " Syntax highliting
 syntax enable
 " Mapleader
