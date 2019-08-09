@@ -35,6 +35,7 @@ Plug 'luochen1990/rainbow'
 Plug 'yggdroot/indentline'
 Plug 'lilydjwg/colorizer'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " requires neovim
+Plug 'ryanoasis/vim-devicons'
 call plug#end()
 " /Plug
 
