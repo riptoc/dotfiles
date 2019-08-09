@@ -1,4 +1,13 @@
-" Riptoc's vimrc
+
+"     ____  _       __            _                _
+"    / __ \(_)___  / /_____  ____( )_____   _   __(_)___ ___  __________
+"   / /_/ / / __ \/ __/ __ \/ ___/// ___/  | | / / / __ `__ \/ ___/ ___/
+"  / _, _/ / /_/ / /_/ /_/ / /__  (__  )   | |/ / / / / / / / /  / /__
+" /_/ |_/_/ .___/\__/\____/\___/ /____/    |___/_/_/ /_/ /_/_/   \___/
+"        /_/
+"
+" https://github.com/riptoc/dotfiles
+"
 
 " Basic setup {{{
 
@@ -24,6 +33,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'luochen1990/rainbow'
 Plug 'yggdroot/indentline'
+Plug 'lilydjwg/colorizer'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " requires neovim
 call plug#end()
 " /Plug
 
@@ -160,6 +171,9 @@ let g:NERDCompactSexyComs = 1
 let g:NERDCommentEmptyLines = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
 
 " }}}
 

@@ -1,14 +1,19 @@
 #!/usr/bin/env bash
 
-# Script to install my frequently used software, nothing special.
-
+# Script to install my frequently used/required programs, nothing special.
+# General programs
 sudo pacman -S --needed firefox code vlc neofetch slock ttf-font-awesome vim neovim\
                         emacs ttf-hack adobe-source-code-pro-fonts xcape exa compton\
                         p7zip xbindkeys veracrypt xdotool rlwrap ranger rofi rsync\
                         the_silver_searcher rxvt-unicode powerline-fonts compton kitty\
                         noto-fonts playerctl python-pip ffmpegthumbnailer highlight\
                         poppler imagemagick python-pillow
+
+# AUR programs
 yay -S --needed nordvpn-bin ttf-symbola
+
+# Pip3 programs
+pip3 install --user pynvim
 
 # Install 0h-my-zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
