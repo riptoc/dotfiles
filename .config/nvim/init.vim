@@ -74,6 +74,8 @@ set splitbelow
 set splitright
 " Show (partial) command in the last line of the screen.
 set showcmd
+" Let airline show the status
+set noshowmode
 " Completion
 set wildmode=longest,list,full
 set wildmenu
@@ -146,6 +148,10 @@ inoremap (<CR> (<CR>)<Esc>ko
 " Toggle wrap
 nnoremap <leader>w :set wrap!<CR>
 
+" Align blocks of text and keep selected
+vmap < <gv
+vmap > >gv
+
 " }}}
 
 " Plugin settings {{{
@@ -175,9 +181,15 @@ let g:NERDCompactSexyComs = 1
 let g:NERDCommentEmptyLines = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
+" Map toggle to leader /
+nnoremap <leader>/ :call NERDComment(0, "toggle")<CR>
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
+" Use smart_case
+call deoplete#custom#option('smart_case', v:true)
+" <TAB>: completion.
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
 
 " }}}
 
