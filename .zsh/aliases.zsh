@@ -30,10 +30,12 @@ alias kitrc="nvim ~/.config/kitty/kitty.conf"
 
 # Common programs
 alias v="nvim"
+alias vi="nvim"
 alias vim="nvim"
 alias vpn="nordvpn"
 alias cht="cht.sh"
 alias r="ranger"
+alias mkdir="mkdir -pv"
 
 
 # Git
