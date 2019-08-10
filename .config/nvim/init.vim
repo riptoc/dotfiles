@@ -182,7 +182,7 @@ let g:NERDCommentEmptyLines = 1
 " Enable NERDCommenterToggle to check all selected lines is commented or not
 let g:NERDToggleCheckAllLines = 1
 " Map toggle to leader /
-nnoremap <leader>/ :call NERDComment(0, "toggle")<CR>
+noremap <leader>/ :call NERDComment(0, "toggle")<CR>
 
 " Deoplete
 let g:deoplete#enable_at_startup = 1
