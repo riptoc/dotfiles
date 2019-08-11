@@ -48,6 +48,15 @@ alias gchb="git checkout -b"
 alias gb="git branch"
 alias gm="git merge"
 
+# Dotfiles
+alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@"
+alias dota="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $@"
+alias dotaa="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add -u"
+alias dotc="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit $@"
+alias dots="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status"
+alias dotd="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME diff"
+alias dotch="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout"
+
 
 # Pacman/Yay
 alias pacin="sudo pacman -S"

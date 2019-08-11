@@ -14,12 +14,3 @@ mc () {
   mkdir -p "$@" && cd "$@"
 }
 
-
-# Dotfiles git function
-dot()  { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@ }
-dota() { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $@ }
-dotaa() { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add -u }
-dotc() { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME commit $@ }
-dots() { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME status }
-dotd() { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME diff }
-dotch() { /usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME checkout }
