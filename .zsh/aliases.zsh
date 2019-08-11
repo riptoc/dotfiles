@@ -48,6 +48,7 @@ alias gchb="git checkout -b"
 alias gb="git branch"
 alias gm="git merge"
 
+
 # Dotfiles
 alias dot="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME $@"
 alias dota="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME add $@"
