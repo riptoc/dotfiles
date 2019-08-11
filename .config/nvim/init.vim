@@ -35,7 +35,10 @@ Plug 'luochen1990/rainbow'
 Plug 'yggdroot/indentline'
 Plug 'lilydjwg/colorizer'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' } " requires neovim
+Plug 'ervandew/supertab'
 Plug 'ryanoasis/vim-devicons'
+Plug 'SirVer/ultisnips' " Snippets plugin
+Plug 'honza/vim-snippets' " The snippets themselves
 call plug#end()
 " /Plug
 
@@ -188,8 +191,13 @@ noremap <leader>/ :call NERDComment(0, "toggle")<CR>
 let g:deoplete#enable_at_startup = 1
 " Use smart_case
 call deoplete#custom#option('smart_case', v:true)
-" <TAB>: completion.
-inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+
+" Ultisnips
+let g:UltiSnipsExpandTrigger="<C-j>"
+
+" Supertab
+let g:SuperTabClosePreviewOnPopupClose = 1
+let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " }}}
 
