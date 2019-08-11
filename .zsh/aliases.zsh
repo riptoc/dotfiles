@@ -12,8 +12,8 @@ alias zsrc="source ~/.zshrc"
 
 
 # Compilers
-alias c="gcc -Wall"
-
+alias ccomp="gcc -Wall"
+alias cppcomp="g++ -Wall -std=c++17"
 
 # Quick cd to common locations
 alias dwn="cd ~/Downloads"
