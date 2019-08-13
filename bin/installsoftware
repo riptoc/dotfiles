@@ -3,14 +3,14 @@
 # Script to install my frequently used/required programs, nothing special.
 # General programs
 sudo pacman -S --needed firefox code vlc neofetch slock ttf-font-awesome vim neovim\
-                        emacs ttf-hack adobe-source-code-pro-fonts xcape exa compton\
+                        emacs ttf-hack adobe-source-code-pro-fonts xcape exa mesa-demos\
                         p7zip xbindkeys veracrypt xdotool rlwrap ranger rofi rsync\
                         the_silver_searcher rxvt-unicode powerline-fonts compton kitty\
                         noto-fonts playerctl python-pip ffmpegthumbnailer highlight\
                         poppler imagemagick python-pillow noto-fonts-emoji noto-fonts-cjk
 
 # AUR programs
-yay -S --needed nordvpn-bin ttf-symbola nerd-fonts-source-code-pro
+yay -S --needed nordvpn-bin ttf-symbola nerd-fonts-source-code-pro compton-tryone-git
 
 # Pip3 programs
 pip3 install --user pynvim

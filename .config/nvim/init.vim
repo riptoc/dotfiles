@@ -134,6 +134,10 @@ nnoremap L g_
 noremap K 5k
 noremap J 5j
 
+" Move normally with wrap
+nnoremap j gj
+nnoremap k gk
+
 " Swap default paste behaviours
 nnoremap p P
 nnoremap P p
