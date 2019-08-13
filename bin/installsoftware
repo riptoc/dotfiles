@@ -10,7 +10,8 @@ sudo pacman -S --needed firefox code vlc neofetch slock ttf-font-awesome vim neo
                         poppler imagemagick python-pillow noto-fonts-emoji noto-fonts-cjk
 
 # AUR programs
-yay -S --needed nordvpn-bin ttf-symbola nerd-fonts-source-code-pro compton-tryone-git
+yay -S --needed nordvpn-bin ttf-symbola nerd-fonts-source-code-pro compton-tryone-git\
+                lain-git
 
 # Pip3 programs
 pip3 install --user pynvim
