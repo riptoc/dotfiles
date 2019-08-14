@@ -89,5 +89,4 @@ alias chgrp='chgrp --preserve-root'
 # General/Other
 alias togglecaps="xdotool key Caps_Lock"
 alias xup="xrdb ~/.Xresources"
-alias ;q=' exit'
 alias :q=' exit'
