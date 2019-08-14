@@ -18,17 +18,17 @@ local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-dark"
 theme.wallpaper                                 = "~/Pictures/Wallpapers/Space/IT7gM2Z.jpg"
 theme.font                                      = "xos4 Terminus 9"
-theme.fg_normal                                 = "#DDDDFF"
-theme.fg_focus                                  = "#46A8C3"
-theme.fg_urgent                                 = "#CC9393"
-theme.bg_normal                                 = "#1A1A1A"
-theme.bg_focus                                  = "#313131"
-theme.bg_urgent                                 = "#1A1A1A"
+theme.fg_normal                                 = "#f9f5d7"
+theme.fg_focus                                  = "#458588"
+theme.fg_urgent                                 = "#cc241d"
+theme.bg_normal                                 = "#1d2021"
+theme.bg_focus                                  = "#32302f"
+theme.bg_urgent                                 = "#cc241c"
 theme.border_width                              = dpi(2)
 theme.border_normal                             = "#3c3836"
 theme.border_focus                              = "#504945"
-theme.border_marked                             = "#CC9393"
-theme.tasklist_bg_focus                         = "#1A1A1A"
+theme.border_marked                             = "#cc241d"
+theme.tasklist_bg_focus                         = "#1d2021"
 theme.titlebar_bg_focus                         = theme.bg_focus
 theme.titlebar_bg_normal                        = theme.bg_normal
 theme.titlebar_fg_focus                         = theme.fg_focus
@@ -163,7 +163,7 @@ theme.mpd = lain.widget.mpd({
             mpdicon:set_image(theme.widget_music)
         end
 
-        widget:set_markup(markup.font(theme.font, markup("#EA6F81", artist) .. title))
+        widget:set_markup(markup.font(theme.font, markup("#b16286", artist) .. title))
     end
 })
 
@@ -247,9 +247,9 @@ local neticon = wibox.widget.imagebox(theme.widget_net)
 local net = lain.widget.net({
     settings = function()
         widget:set_markup(markup.font(theme.font,
-                          markup("#7AC82E", " " .. net_now.received)
+                          markup("#b8bb26", " " .. net_now.received)
                           .. " " ..
-                          markup("#46A8C3", " " .. net_now.sent .. " ")))
+                          markup("#458588", " " .. net_now.sent .. " ")))
     end
 })
 
