@@ -39,6 +39,7 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'SirVer/ultisnips' " Snippets plugin
 Plug 'honza/vim-snippets' " The snippets themselves
 Plug 'dense-analysis/ale'
+Plug 'jreybert/vimagit'
 call plug#end()
 " /Plug
 
