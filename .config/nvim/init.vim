@@ -26,7 +26,6 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'PotatoesMaster/i3-vim-syntax'
 Plug 'tpope/vim-surround'
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'scrooloose/nerdcommenter'
 Plug 'flazz/vim-colorschemes'
 Plug 'vim-airline/vim-airline'
@@ -208,9 +207,9 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 
 " Theming {{{
 
-set background=light
-colorscheme PaperColor
-let g:airline_theme='papercolor'
+set background=dark
+colorscheme gruvbox
+let g:airline_theme='zenburn'
 let g:airline_powerline_fonts = 1
 highlight Comment cterm=italic gui=italic
 
