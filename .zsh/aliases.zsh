@@ -2,11 +2,6 @@
 ## Zshrc aliases file ##
 ########################
 
-# Use exa instead of ls
-alias ls="exa --group-directories-first -h --git --time-style=long-iso"
-alias tree="exa -lahT --level=3 -I .git"
-
-
 # Source zshrc file
 alias zsrc="source ~/.zshrc"
 
@@ -14,6 +9,7 @@ alias zsrc="source ~/.zshrc"
 # Compilers
 alias ccomp="gcc -Wall"
 alias cppcomp="g++ -Wall -std=c++17"
+
 
 # Quick cd to common locations
 alias dwn="cd ~/Downloads"
@@ -35,7 +31,6 @@ alias vim="nvim"
 alias vpn="nordvpn"
 alias cht="cht.sh"
 alias r="ranger"
-alias mkdir="mkdir -pv"
 
 
 # Git
@@ -70,7 +65,29 @@ alias yayqi="yay -Qi"
 alias yayrm="yay -Rs"
 
 
+# Modified commands
+alias more="less"
+alias df="df -h"
+alias du="du -c -h"
+alias ls="exa --group-directories-first -h --git --time-style=long-iso"
+alias tree="exa -lahT --level=3 -I .git"
+alias mkdir="mkdir -pv"
+alias nano="nano -w"
+alias ping="ping -c 5"
+
+
+# Safety first
+alias cp='cp -i'
+alias mv='mv -i'
+alias rm='rm -I'
+alias ln='ln -i'
+alias chown='chown --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chgrp='chgrp --preserve-root'
+
+
 # General/Other
 alias togglecaps="xdotool key Caps_Lock"
 alias xup="xrdb ~/.Xresources"
-
+alias ;q=' exit'
+alias :q=' exit'
