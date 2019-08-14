@@ -2,13 +2,12 @@
 
 # Script to install my frequently used/required programs, nothing special.
 # General programs
-sudo pacman -S --needed firefox code vlc neofetch slock ttf-font-awesome vim neovim\
+sudo pacman -S --needed firefox curl vlc neofetch slock ttf-font-awesome vim neovim\
                         emacs ttf-hack adobe-source-code-pro-fonts xcape exa mesa-demos\
                         p7zip xbindkeys veracrypt xdotool rlwrap ranger rofi rsync\
                         the_silver_searcher rxvt-unicode powerline-fonts compton kitty\
                         noto-fonts playerctl python-pip ffmpegthumbnailer highlight\
-                        poppler imagemagick python-pillow noto-fonts-emoji noto-fonts-cjk\
-                        nodejs npm
+                        poppler imagemagick python-pillow noto-fonts-emoji noto-fonts-cjk
 
 # AUR programs
 yay -S --needed nordvpn-bin ttf-symbola nerd-fonts-source-code-pro compton-tryone-git\
@@ -20,3 +19,6 @@ pip3 install --user pynvim
 # Install 0h-my-zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
+# Install NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.34.0/install.sh | bash
+nvm install node
