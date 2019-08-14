@@ -7,7 +7,8 @@ sudo pacman -S --needed firefox code vlc neofetch slock ttf-font-awesome vim neo
                         p7zip xbindkeys veracrypt xdotool rlwrap ranger rofi rsync\
                         the_silver_searcher rxvt-unicode powerline-fonts compton kitty\
                         noto-fonts playerctl python-pip ffmpegthumbnailer highlight\
-                        poppler imagemagick python-pillow noto-fonts-emoji noto-fonts-cjk
+                        poppler imagemagick python-pillow noto-fonts-emoji noto-fonts-cjk\
+                        nodejs npm
 
 # AUR programs
 yay -S --needed nordvpn-bin ttf-symbola nerd-fonts-source-code-pro compton-tryone-git\
