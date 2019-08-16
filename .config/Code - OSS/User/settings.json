@@ -1,8 +1,10 @@
 {
   "C_Cpp.clang_format_fallbackStyle": "Google",
   "C_Cpp.clang_format_style": "LLVM",
-  "C_Cpp.default.cppStandard": "c++11",
+  "C_Cpp.default.cppStandard": "c++17",
   "C_Cpp.default.intelliSenseMode": "gcc-x64",
+  "C_Cpp.updateChannel": "Insiders",
+  "C_Cpp.suggestSnippets": false,
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.fontSize": 12,
   "editor.detectIndentation": false,
@@ -52,6 +54,5 @@
   "workbench.statusBar.visible": false,
   "explorer.sortOrder": "type",
   "debug.inlineValues": true,
-  "terminal.external.linuxExec": "kitty",
-  "C_Cpp.updateChannel": "Insiders"
+  "terminal.external.linuxExec": "kitty"
 }
