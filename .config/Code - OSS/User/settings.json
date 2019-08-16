@@ -6,7 +6,7 @@
   "debug.allowBreakpointsEverywhere": true,
   "debug.console.fontSize": 12,
   "editor.detectIndentation": false,
-  "editor.fontFamily": "\"Source Code Pro for Powerline\", Hack, Inconsolata, monospace",
+  "editor.fontFamily": "\"Fira Code\", Hack, Inconsolata, monospace",
   "editor.fontSize": 13,
   "editor.fontLigatures": true,
   "editor.glyphMargin": true,
@@ -42,7 +42,7 @@
   "window.menuBarVisibility": "toggle",
   "window.restoreFullscreen": true,
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Paper White",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.startupEditor": "newUntitledFile",
   "editor.lineNumbers": "off",
   "editor.mouseWheelZoom": true,
@@ -52,5 +52,6 @@
   "workbench.statusBar.visible": false,
   "explorer.sortOrder": "type",
   "debug.inlineValues": true,
-  "terminal.external.linuxExec": "kitty"
+  "terminal.external.linuxExec": "kitty",
+  "C_Cpp.updateChannel": "Insiders"
 }
