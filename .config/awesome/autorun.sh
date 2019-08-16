@@ -21,4 +21,4 @@ compton --blur-background\
         --backend glx
 vpn c
 # Custom scripts
-remapcaps
+~/bin/remapcaps
