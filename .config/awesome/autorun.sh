@@ -20,5 +20,6 @@ compton --blur-background\
         --opacity-rule 85:'class_g="code-oss"'\
         --backend glx
 vpn c
+feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/*
 # Custom scripts
 ~/bin/remapcaps
