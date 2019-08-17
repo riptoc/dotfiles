@@ -13,9 +13,14 @@
     "description": "Standard c++ main function"
   },
   "iostream": {
-    "prefix": "io",
+    "prefix": "#io",
     "body": "#include <iostream>",
     "description": "Include iostream header"
+  },
+  "#include": {
+    "prefix": "#i",
+    "body": "#include <$1>",
+    "description": "Include header"
   },
   "cout": {
     "prefix": "cout",
@@ -27,4 +32,14 @@
     "body": "${1:std::}cin >> $2;",
     "description": "cin statement, optional 'std::'"
   },
+  "comment pair": {
+    "prefix": "/*",
+    "body": [
+      "/*",
+      " *  $1",
+      " */",
+      ""
+    ],
+    "description": "Comment pair"
+  }
 }
