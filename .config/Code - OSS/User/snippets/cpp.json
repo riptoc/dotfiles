@@ -2,7 +2,7 @@
   "main function": {
     "prefix": "main",
     "body": [
-      "int main(${1: int argc, char *argv[] })",
+      "int main(${1:int argc, char *argv[]})",
       "{",
       "  $2",
       "",
@@ -41,5 +41,25 @@
       ""
     ],
     "description": "Comment pair"
+  },
+  "while loop": {
+    "prefix": "while",
+    "body": [
+      "while ($1) {",
+      "  $2",
+      "}",
+      ""
+    ],
+    "description": "while loop"
+  },
+  "if statement": {
+    "prefix": "if",
+    "body": [
+      "if ($1) {",
+      "  $2",
+      "}",
+      ""
+    ],
+    "description": "if statement"
   }
 }
