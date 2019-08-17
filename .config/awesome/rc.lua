@@ -345,17 +345,17 @@ globalkeys = my_table.join(
     awful.key({ altkey, "Control" }, "-", function () lain.util.useless_gaps_resize(-1) end,
               {description = "decrement useless gaps", group = "tag"}),
 
-    -- Dynamic tagging
-    awful.key({ modkey, "Shift" }, "n", function () lain.util.add_tag() end,
-              {description = "add new tag", group = "tag"}),
-    awful.key({ modkey, "Shift" }, "r", function () lain.util.rename_tag() end,
-              {description = "rename tag", group = "tag"}),
-    awful.key({ modkey, "Shift" }, "Left", function () lain.util.move_tag(-1) end,
-              {description = "move tag to the left", group = "tag"}),
-    awful.key({ modkey, "Shift" }, "Right", function () lain.util.move_tag(1) end,
-              {description = "move tag to the right", group = "tag"}),
-    awful.key({ modkey, "Shift" }, "d", function () lain.util.delete_tag() end,
-              {description = "delete tag", group = "tag"}),
+    ---- Dynamic tagging
+    -- awful.key({ modkey, "Shift" }, "n", function () lain.util.add_tag() end,
+    --           {description = "add new tag", group = "tag"}),
+    -- awful.key({ modkey, "Shift" }, "r", function () lain.util.rename_tag() end,
+    --           {description = "rename tag", group = "tag"}),
+    -- awful.key({ modkey, "Shift" }, "Left", function () lain.util.move_tag(-1) end,
+    --           {description = "move tag to the left", group = "tag"}),
+    -- awful.key({ modkey, "Shift" }, "Right", function () lain.util.move_tag(1) end,
+    --           {description = "move tag to the right", group = "tag"}),
+    -- awful.key({ modkey, "Shift" }, "d", function () lain.util.delete_tag() end,
+    --           {description = "delete tag", group = "tag"}),
 
     -- Standard program
     awful.key({ modkey,           }, "Return", function () awful.spawn(terminal) end,
@@ -368,10 +368,6 @@ globalkeys = my_table.join(
       {description = "launch ranger", group = "launcher"}),
     awful.key({ modkey,           }, "p", function () awful.spawn(terminal.." -e htop") end,
       {description = "launch htop", group = "launcher"}),
-    awful.key({ altkey, "Shift"   }, "l",     function () awful.tag.incmwfact( 0.05)          end,
-              {description = "increase master width factor", group = "layout"}),
-    awful.key({ altkey, "Shift"   }, "h",     function () awful.tag.incmwfact(-0.05)          end,
-              {description = "decrease master width factor", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "h",     function () awful.tag.incnmaster( 1, nil, true) end,
               {description = "increase the number of master clients", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "l",     function () awful.tag.incnmaster(-1, nil, true) end,
@@ -384,6 +380,12 @@ globalkeys = my_table.join(
               {description = "select next", group = "layout"}),
     awful.key({ modkey, "Shift"   }, "space", function () awful.layout.inc(-1)                end,
               {description = "select previous", group = "layout"}),
+
+    -- Layout
+    awful.key({ modkey, "Shift"    }, "Right",     function () awful.tag.incmwfact( 0.01)    end),
+    awful.key({ modkey, "Shift"    }, "Left",     function () awful.tag.incmwfact(-0.01)    end),
+    awful.key({ modkey, "Shift"    }, "Down",     function () awful.client.incwfact( 0.01)    end),
+    awful.key({ modkey, "Shift"    }, "Up",     function () awful.client.incwfact(-0.01)    end),
 
     awful.key({ modkey, "Control" }, "n",
               function ()
