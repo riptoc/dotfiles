@@ -16,13 +16,13 @@
   "#include \"\"": {
     "prefix": "#i",
     "body": "#include \"$1\"",
-    "description": "Include header"
+    "description": "Include other header"
   },
 
   "#include <>": {
     "prefix": "#i<",
     "body": "#include <$1>",
-    "description": "Include header"
+    "description": "Include std library header"
   },
 
   "iostream": {
