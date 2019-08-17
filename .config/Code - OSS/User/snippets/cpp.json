@@ -2,7 +2,7 @@
   "main function": {
     "prefix": "main",
     "body": [
-      "int main( ${1:int argc, char *argv[]} )",
+      "int main(${1: int argc, char *argv[] })",
       "{",
       "  $2",
       "",
