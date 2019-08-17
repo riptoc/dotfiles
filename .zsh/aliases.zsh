@@ -2,15 +2,6 @@
 ## Zshrc aliases file ##
 ########################
 
-# Source zshrc file
-alias zsrc="source ~/.zshrc"
-
-
-# Compilers
-alias ccomp="gcc -Wall"
-alias cppcomp="g++ -Wall -std=c++17"
-
-
 # Quick cd to common locations
 alias dwn="cd ~/Downloads"
 alias t="cd ~/Tuts"
@@ -74,6 +65,7 @@ alias tree="exa -lahT --level=3 -I .git"
 alias mkdir="mkdir -pv"
 alias nano="nano -w"
 alias ping="ping -c 5"
+alias g++="g++ -Wall -std=c++17"
 
 
 # Safety first
@@ -90,3 +82,4 @@ alias chgrp='chgrp --preserve-root'
 alias togglecaps="xdotool key Caps_Lock"
 alias xup="xrdb ~/.Xresources"
 alias :q=' exit'
+alias zsrc="source ~/.zshrc"
