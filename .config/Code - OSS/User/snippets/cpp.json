@@ -10,6 +10,21 @@
       "}",
       ""
     ],
-    "description": "main function"
-  }
+    "description": "Standard c++ main function"
+  },
+  "iostream": {
+    "prefix": "io",
+    "body": "#include <iostream>",
+    "description": "Include iostream header"
+  },
+  "cout": {
+    "prefix": "cout",
+    "body": "${1:std::}cout << $2 << ${1:std::}endl;",
+    "description": "cout statement, optional 'std::'"
+  },
+  "cin": {
+    "prefix": "cin",
+    "body": "${1:std::}cin >> $2;",
+    "description": "cin statement, optional 'std::'"
+  },
 }
