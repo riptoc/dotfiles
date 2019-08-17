@@ -12,26 +12,37 @@
     ],
     "description": "Standard c++ main function"
   },
+
+  "#include \"\"": {
+    "prefix": "#i",
+    "body": "#include \"$1\"",
+    "description": "Include header"
+  },
+
+  "#include <>": {
+    "prefix": "#i<",
+    "body": "#include <$1>",
+    "description": "Include header"
+  },
+
   "iostream": {
     "prefix": "#io",
     "body": "#include <iostream>",
     "description": "Include iostream header"
   },
-  "#include": {
-    "prefix": "#i",
-    "body": "#include <$1>",
-    "description": "Include header"
-  },
+
   "cout": {
     "prefix": "cout",
     "body": "${1:std::}cout << $2 << ${1:std::}endl;",
     "description": "cout statement, optional 'std::'"
   },
+
   "cin": {
     "prefix": "cin",
     "body": "${1:std::}cin >> $2;",
     "description": "cin statement, optional 'std::'"
   },
+
   "comment pair": {
     "prefix": "/*",
     "body": [
@@ -42,6 +53,7 @@
     ],
     "description": "Comment pair"
   },
+
   "while loop": {
     "prefix": "while",
     "body": [
@@ -52,6 +64,7 @@
     ],
     "description": "while loop"
   },
+
   "if statement": {
     "prefix": "if",
     "body": [
@@ -61,5 +74,75 @@
       ""
     ],
     "description": "if statement"
-  }
+  },
+
+  "else-if statement": {
+		"prefix": "else if",
+		"body": [
+      "else if ($1) {",
+      "  $2",
+      "}",
+      ""
+    ],
+		"description": "else-if statement"
+	},
+
+  "for loop": {
+    "prefix": "for",
+    "body": [
+      "for (${1:int} ${2:i} = ${3:0}; ${2:i} >= $4; ${2:i}++) {",
+      "  $5",
+      "}"
+    ],
+    "description": "for loop"
+  },
+
+  "class": {
+		"prefix": "class",
+		"body": [
+			"class ${1:MyClass}",
+			"{",
+			"public:",
+			"  ${1:MyClass}();",
+			"  ${1:MyClass}(${1:MyClass} &&) = default;",
+			"  ${1:MyClass}(const ${1:MyClass} &) = default;",
+			"  ${1:MyClass} &operator=(${1:MyClass} &&) = default;",
+			"  ${1:MyClass} &operator=(const ${1:MyClass} &) = default;",
+			"  ~${1:MyClass}();",
+			"",
+			"private:",
+			"  $2",
+			"};",
+			"",
+			"${1:MyClass}::${1:MyClass}()",
+			"{",
+			"}",
+			"",
+			"${1:MyClass}::~${1:MyClass}()",
+			"{",
+			"}"
+		],
+		"description": "class"
+  },
+
+  "#ifdef": {
+		"prefix": "#ifd",
+		"body": [
+			"#ifdef ${1}",
+			"$2",
+			"#endif // ${1}"
+		],
+		"description": "#ifdef"
+  },
+
+	"#ifndef": {
+		"prefix": "#ifnd",
+		"body": [
+			"#ifndef ${1}",
+			"$2",
+			"#endif // !$1"
+		],
+		"description": "#ifndef"
+	},
+
 }
