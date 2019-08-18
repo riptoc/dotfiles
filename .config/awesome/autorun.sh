@@ -17,6 +17,7 @@ compton --blur-background\
         --blur-method kawase\
         --blur-strength 5\
         --opacity-rule 85:'class_g="kitty"'\
+        --opacity-rule 80:'class_g="rofi"'\
         --opacity-rule 85:'class_g="code-oss"'\
         --backend glx
 vpn c
