@@ -43,6 +43,12 @@
     "description": "cin statement, optional 'std::'"
   },
 
+  "cerr": {
+    "prefix": "cerr",
+    "body": "${1:std::}cerr << $2 << ${1:std::}endl;",
+    "description": "cerr statement, optional 'std::'"
+  },
+
   "comment pair": {
     "prefix": "/*",
     "body": [
