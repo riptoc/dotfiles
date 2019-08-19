@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
+
 # Script to install my frequently used/required programs, nothing special.
 # General programs
 sudo pacman -S --needed firefox curl vlc neofetch slock ttf-font-awesome vim neovim\
@@ -8,7 +9,7 @@ sudo pacman -S --needed firefox curl vlc neofetch slock ttf-font-awesome vim neo
                         the_silver_searcher rxvt-unicode powerline-fonts compton kitty\
                         noto-fonts playerctl python-pip ffmpegthumbnailer highlight\
                         poppler imagemagick python-pillow noto-fonts-emoji noto-fonts-cjk\
-                        otf-fira-code make xclip
+                        otf-fira-code make xclip linux-headers linux-firmware
 
 # AUR programs
 yay -S --needed nordvpn-bin ttf-symbola nerd-fonts-source-code-pro compton-tryone-git\
