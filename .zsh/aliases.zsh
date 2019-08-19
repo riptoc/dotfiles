@@ -83,3 +83,4 @@ alias togglecaps="xdotool key Caps_Lock"
 alias xup="xrdb ~/.Xresources"
 alias :q=' exit'
 alias zsrc="source ~/.zshrc"
+alias starwars="telnet towel.blinkenlights.nl"
