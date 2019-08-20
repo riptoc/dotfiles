@@ -20,7 +20,7 @@ run compton --blur-background\
         --opacity-rule 80:'class_g="rofi"'\
         --opacity-rule 85:'class_g="code-oss"'\
         --backend glx
-run vpn c
+nordvpn c
 run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/*
 # Custom scripts
 run ~/bin/remapcaps
