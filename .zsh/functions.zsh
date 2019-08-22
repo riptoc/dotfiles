@@ -27,3 +27,7 @@ cl() {
 }
 
 
+# Quick compile and run a c++ program
+cppr() {
+  g++ $1 && ./a.out
+}
