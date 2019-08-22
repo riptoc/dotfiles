@@ -81,6 +81,7 @@ alias chgrp='chgrp --preserve-root'
 
 # General/Other
 alias togglecaps="xdotool key Caps_Lock"
+alias resetcompton="pkill compton && ~/.config/awesome/autorun.sh"
 alias xup="xrdb ~/.Xresources"
 alias :q=' exit'
 alias zsrc="source ~/.zshrc"
