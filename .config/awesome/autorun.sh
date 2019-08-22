@@ -15,12 +15,12 @@ run firefox
 run xbindkeys
 run compton --blur-background\
         --blur-method kawase\
-        --blur-strength 5\
-        --opacity-rule 90:'class_g="kitty"'\
-        --opacity-rule 90:'class_g="rofi"'\
-        --opacity-rule 90:'class_g="code-oss"'\
+        --blur-strength 6\
+        --opacity-rule 80:'class_g="kitty"'\
+        --opacity-rule 80:'class_g="rofi"'\
+        --opacity-rule 80:'class_g="code-oss"'\
         --backend glx
 nordvpn c
-run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/*
+run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/spidey.jpg
 # Custom scripts
 run ~/bin/remapcaps
