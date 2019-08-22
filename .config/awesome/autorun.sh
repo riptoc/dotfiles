@@ -16,9 +16,9 @@ run xbindkeys
 run compton --blur-background\
         --blur-method kawase\
         --blur-strength 5\
-        --opacity-rule 85:'class_g="kitty"'\
-        --opacity-rule 80:'class_g="rofi"'\
-        --opacity-rule 85:'class_g="code-oss"'\
+        --opacity-rule 90:'class_g="kitty"'\
+        --opacity-rule 90:'class_g="rofi"'\
+        --opacity-rule 90:'class_g="code-oss"'\
         --backend glx
 nordvpn c
 run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/*
