@@ -44,7 +44,7 @@
   "window.menuBarVisibility": "toggle",
   "window.restoreFullscreen": true,
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Gruvbox Dark Medium",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "workbench.startupEditor": "newUntitledFile",
   "editor.lineNumbers": "on",
   "editor.mouseWheelZoom": true,
@@ -54,5 +54,7 @@
   "workbench.statusBar.visible": false,
   "explorer.sortOrder": "type",
   "debug.inlineValues": true,
-  "terminal.external.linuxExec": "kitty"
+  "terminal.external.linuxExec": "kitty",
+  "workbench.colorCustomizations": {},
+  "workbench.iconTheme": "material-icon-theme"
 }
