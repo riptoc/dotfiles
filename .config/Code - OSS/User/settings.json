@@ -46,7 +46,7 @@
   "window.zoomLevel": 0,
   "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.startupEditor": "newUntitledFile",
-  "editor.lineNumbers": "off",
+  "editor.lineNumbers": "on",
   "editor.mouseWheelZoom": true,
   "editor.renderLineHighlight": "gutter",
   "editor.quickSuggestionsDelay": 5,
