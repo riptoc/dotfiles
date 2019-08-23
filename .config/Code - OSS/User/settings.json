@@ -17,7 +17,7 @@
   "editor.rulers": [],
   "editor.suggestSelection": "first",
   "editor.tabCompletion": "on",
-  "editor.tabSize": 2,
+  "editor.tabSize": 4,
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 100,
   "explorer.confirmDelete": false,
