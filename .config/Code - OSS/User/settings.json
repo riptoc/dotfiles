@@ -44,7 +44,7 @@
   "window.menuBarVisibility": "toggle",
   "window.restoreFullscreen": true,
   "window.zoomLevel": 0,
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Gruvbox Dark Medium",
   "workbench.startupEditor": "newUntitledFile",
   "editor.lineNumbers": "on",
   "editor.mouseWheelZoom": true,
