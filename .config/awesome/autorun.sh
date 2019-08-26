@@ -21,6 +21,6 @@ run compton --blur-background\
         --opacity-rule 80:'class_g="code-oss"'\
         --backend glx
 nordvpn c
-run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/spidey.jpg
+run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/Media/spidey.jpg
 # Custom scripts
 run ~/bin/remapcaps
