@@ -19,6 +19,7 @@ run compton --blur-background\
         --opacity-rule 80:'class_g="kitty"'\
         --opacity-rule 80:'class_g="rofi"'\
         --opacity-rule 80:'class_g="code-oss"'\
+        --opacity-rule 95:'class_g="jetbrains-pycharm-ce"'\
         --backend glx
 nordvpn c
 run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/Media/spidey.jpg
