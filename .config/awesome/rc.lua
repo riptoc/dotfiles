@@ -692,9 +692,9 @@ client.connect_signal("manage", function (c)
     end
 
     -- Rounded corners
-    c.shape = function(cr,w,h)
-        gears.shape.rounded_rect(cr,w,h,5)
-    end
+    -- c.shape = function(cr,w,h)
+        -- gears.shape.rounded_rect(cr,w,h,5)
+    -- end
 end)
 
 -- Autorun programs when awesome starts
