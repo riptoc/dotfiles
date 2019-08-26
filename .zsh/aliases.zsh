@@ -51,10 +51,12 @@ alias pacin="sudo pacman -S"
 alias pacup="sudo pacman -Syu"
 alias pacqi="pacman -Qi"
 alias pacrm="sudo pacman -Rs"
+alias pacss="pacman -Ss"
 alias yayin="yay -S"
 alias yayup="yay -Syu"
 alias yayqi="yay -Qi"
 alias yayrm="yay -Rs"
+alias yayss="yay -Ss"
 
 
 # Modified commands
