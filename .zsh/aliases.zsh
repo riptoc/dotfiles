@@ -88,3 +88,4 @@ alias xup="xrdb ~/.Xresources"
 alias :q=' exit'
 alias zsrc="source ~/.zshrc"
 alias starwars="telnet towel.blinkenlights.nl"
+alias cookiepy="cookiecutter https://github.com/kragniz/cookiecutter-pypackage-minimal.git"
