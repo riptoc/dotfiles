@@ -19,7 +19,7 @@ run compton --blur-background\
         --opacity-rule 80:'class_g="kitty"'\
         --opacity-rule 80:'class_g="rofi"'\
         --opacity-rule 80:'class_g="code-oss"'\
-        --opacity-rule 90:'class_g="jetbrains-pycharm-ce"'\
+        --opacity-rule 90:'class_g="jetbrains-pycharm"'\
         --backend glx
 nordvpn c
 run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/*
