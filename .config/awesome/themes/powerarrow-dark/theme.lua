@@ -1,7 +1,6 @@
 --[[
 
      Modified Powerarrow Dark Awesome WM theme
-     from github.com/lcpz
 
 --]]
 
