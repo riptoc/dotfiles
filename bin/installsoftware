@@ -9,7 +9,7 @@ sudo pacman -Sq --needed firefox curl make vlc neofetch slock ttf-font-awesome v
                          the_silver_searcher powerline-fonts compton kitty jetbrains-jre\
                          noto-fonts playerctl python-pip ffmpegthumbnailer highlight\
                          poppler imagemagick python-pillow noto-fonts-emoji noto-fonts-cjk\
-                         otf-fira-code xclip linux-headers linux-firmware
+                         otf-fira-code xclip linux-headers linux-firmware scrot
 
 # AUR programs
 yay -Sq --needed nordvpn-bin ttf-symbola compton-tryone-git awesome-freedesktop-git\
