@@ -17,17 +17,17 @@ local theme                                     = {}
 theme.dir                                       = os.getenv("HOME") .. "/.config/awesome/themes/powerarrow-dark"
 theme.wallpaper                                 = "~/Pictures/Wallpapers/Space/IT7gM2Z.jpg"
 theme.font                                      = "xos4 Terminus 9"
-theme.fg_normal                                 = "#a89984"
-theme.fg_focus                                  = "#f9f5d7"
-theme.fg_urgent                                 = "#cc241d"
-theme.bg_normal                                 = "#1d2021"
-theme.bg_focus                                  = "#32302f"
-theme.bg_urgent                                 = "#cc241c"
+theme.fg_normal                                 = "#e6e6e6"
+theme.fg_focus                                  = "#f8f8f2"
+theme.fg_urgent                                 = "#ff5555"
+theme.bg_normal                                 = "#282836"
+theme.bg_focus                                  = "#4d4d4d"
+theme.bg_urgent                                 = "#ff5555"
 theme.border_width                              = dpi(1)
-theme.border_normal                             = "#3c3836"
-theme.border_focus                              = "#504945"
-theme.border_marked                             = "#cc241d"
-theme.tasklist_bg_focus                         = "#1d2021"
+theme.border_normal                             = "#414158"
+theme.border_focus                              = "#626284"
+theme.border_marked                             = "#ff5555"
+theme.tasklist_bg_focus                         = "#282836"
 theme.titlebar_bg_focus                         = theme.bg_focus
 theme.titlebar_bg_normal                        = theme.bg_normal
 theme.titlebar_fg_focus                         = theme.fg_focus
@@ -246,9 +246,9 @@ local neticon = wibox.widget.imagebox(theme.widget_net)
 local net = lain.widget.net({
     settings = function()
         widget:set_markup(markup.font(theme.font,
-                          markup("#b8bb26", " " .. net_now.received)
+                          markup("#f1fa8c", " " .. net_now.received)
                           .. " " ..
-                          markup("#458588", " " .. net_now.sent .. " ")))
+                          markup("#8be9fd", " " .. net_now.sent .. " ")))
     end
 })
 

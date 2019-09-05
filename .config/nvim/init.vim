@@ -209,9 +209,10 @@ let g:SuperTabDefaultCompletionType = "<c-n>"
 " Theming {{{
 
 set background=dark
-colorscheme gruvbox
-let g:airline_theme='zenburn'
+colorscheme dracula
+let g:airline_theme='base16_spacemacs'
 let g:airline_powerline_fonts = 1
+highlight Normal guibg=#282836
 highlight Comment cterm=italic gui=italic
 
 " Transparent background
