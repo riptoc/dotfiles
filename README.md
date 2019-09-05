@@ -5,8 +5,8 @@ Set up as a bare repo on the system to track these files.
 
 ## Screenshots
 
-![Windows](https://github.com/riptoc/dotfiles/blob/master/wins_scrot.png)
-![Editor](https://github.com/riptoc/dotfiles/blob/master/editor_scrot.png)
+![Windows](https://github.com/riptoc/dotfiles/blob/master/Screenshots/wins_scrot.png)
+![Editor](https://github.com/riptoc/dotfiles/blob/master/Screenshots/editor_scrot.png)
 
 ## Included in this repo
 + Awesome WM setup + theme
