@@ -13,7 +13,8 @@ sudo pacman -Sq --needed firefox curl make vlc neofetch slock ttf-font-awesome v
 
 # AUR programs
 yay -Sq --needed nordvpn-bin ttf-symbola compton-tryone-git awesome-freedesktop-git\
-                 lain-git pycharm-professional python-cookiecutter python-pynvim
+                 lain-git pycharm-professional python-cookiecutter python-pynvim\
+                 clion clion-cmake
 
 # Install 0h-my-zsh plugins
 git clone https://github.com/zsh-users/zsh-autosuggestions\
