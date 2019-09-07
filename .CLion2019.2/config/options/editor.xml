@@ -1,9 +1,13 @@
 <application>
   <component name="DefaultFont">
-    <option name="FONT_SIZE" value="13" />
     <option name="FONT_FAMILY" value="Fira Code" />
-    <option name="LINE_SPACING" value="1.1" />
+    <option name="LINE_SPACING" value="1.0" />
     <option name="USE_LIGATURES" value="true" />
     <option name="SECONDARY_FONT_FAMILY" value="Fira Mono for Powerline" />
+  </component>
+  <component name="EditorSettings">
+    <option name="SOFT_WRAP_FILE_MASKS" value="*.md; *.txt; *.rst; *.adoc" />
+    <option name="STRIP_TRAILING_SPACES" value="Whole" />
+    <option name="KEEP_TRAILING_SPACE_ON_CARET_LINE" value="false" />
   </component>
 </application>
