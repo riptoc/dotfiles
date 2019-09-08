@@ -14,7 +14,6 @@
     </extensions>
   </Objective-C-extensions>
   <codeStyleSettings language="ObjectiveC">
-    <option name="KEEP_BLANK_LINES_BEFORE_RBRACE" value="0" />
     <option name="BLANK_LINES_AROUND_CLASS" value="2" />
     <option name="BLANK_LINES_AROUND_METHOD" value="2" />
     <option name="ELSE_ON_NEW_LINE" value="true" />
