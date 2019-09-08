@@ -10,6 +10,8 @@
   <action id="MoveLineUp">
     <keyboard-shortcut first-keystroke="ctrl alt up" />
   </action>
+  <action id="NextOccurence" />
+  <action id="PreviousOccurence" />
   <action id="ReformatCode">
     <keyboard-shortcut first-keystroke="ctrl alt l" />
     <keyboard-shortcut first-keystroke="alt l" />
