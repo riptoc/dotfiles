@@ -1,5 +1,9 @@
 <code_scheme name="Riptoc" version="173">
+  <option name="RIGHT_MARGIN" value="100" />
   <Objective-C>
+    <option name="NAMESPACE_BRACE_PLACEMENT" value="5" />
+    <option name="FUNCTION_BRACE_PLACEMENT" value="5" />
+    <option name="BLOCK_BRACE_PLACEMENT" value="5" />
     <option name="SPACE_BEFORE_INIT_LIST" value="true" />
     <option name="SPACE_BEFORE_POINTER_IN_DECLARATION" value="false" />
     <option name="SPACE_AFTER_POINTER_IN_DECLARATION" value="true" />
@@ -8,14 +12,15 @@
   </Objective-C>
   <Objective-C-extensions>
     <extensions>
-      <pair source="cpp" header="h" fileNamingConvention="NONE" />
-      <pair source="cpp" header="hpp" fileNamingConvention="NONE" />
+      <pair source="cpp" header="h" fileNamingConvention="SNAKE_CASE" />
+      <pair source="cpp" header="hpp" fileNamingConvention="SNAKE_CASE" />
       <pair source="c" header="h" fileNamingConvention="NONE" />
     </extensions>
   </Objective-C-extensions>
   <codeStyleSettings language="ObjectiveC">
     <option name="BLANK_LINES_AROUND_CLASS" value="2" />
     <option name="BLANK_LINES_AROUND_METHOD" value="2" />
+    <option name="CLASS_BRACE_STYLE" value="5" />
     <option name="ELSE_ON_NEW_LINE" value="true" />
     <option name="IF_BRACE_FORCE" value="3" />
     <indentOptions>
