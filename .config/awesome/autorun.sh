@@ -20,6 +20,7 @@ run compton --blur-background\
         --opacity-rule 80:'class_g="rofi"'\
         --opacity-rule 80:'class_g="code-oss"'\
         --opacity-rule 90:'class_g="jetbrains-pycharm"'\
+        --opacity-rule 90:'class_g="jetbrains-idea"'\
         --opacity-rule 90:'class_g="jetbrains-clion"'\
         --backend glx
 nordvpn c
