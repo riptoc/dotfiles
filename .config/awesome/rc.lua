@@ -79,7 +79,7 @@ local altkey       = "Mod1"
 local terminal     = "kitty"
 local editor       = os.getenv("EDITOR") or "nvim"
 local gui_editor   = "code"
-local browser      = "firefox"
+local browser      = "google-chrome-stable"
 local guieditor    = "code"
 local scrlocker    = "slock"
 

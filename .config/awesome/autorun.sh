@@ -11,11 +11,11 @@ run() {
 }
 
 # Default programs
-run firefox
+run google-chrome-stable
 run xbindkeys
 run compton --blur-background\
         --blur-method kawase\
-        --blur-strength 6\
+        --blur-strength 8\
         --opacity-rule 80:'class_g="kitty"'\
         --opacity-rule 80:'class_g="rofi"'\
         --opacity-rule 80:'class_g="code-oss"'\
@@ -24,6 +24,6 @@ run compton --blur-background\
         --opacity-rule 90:'class_g="jetbrains-clion"'\
         --backend glx
 nordvpn c
-run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/*
+run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/Media/spidey.jpg
 # Custom scripts
 run ~/bin/remapcaps
