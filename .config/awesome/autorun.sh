@@ -23,6 +23,6 @@ run compton --blur-background\
         --opacity-rule 90:'class_g="jetbrains-idea"'\
         --opacity-rule 90:'class_g="jetbrains-clion"'\
         --backend glx
-run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/j2d0wlha7dh31.png.webp
+run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/poppyhill2.jpg
 # Custom scripts
 run ~/bin/remapcaps
