@@ -19,7 +19,7 @@ alias kitrc="nvim ~/.config/kitty/kitty.conf"
 alias v="nvim"
 alias vi="nvim"
 alias vim="nvim"
-alias vpn="expressvpn"
+alias vpn="sudo openvpn /etc/openvpn/client/client.conf"
 alias cht="cht.sh"
 alias r="ranger"
 
