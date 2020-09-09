@@ -23,7 +23,6 @@ run compton --blur-background\
         --opacity-rule 90:'class_g="jetbrains-idea"'\
         --opacity-rule 90:'class_g="jetbrains-clion"'\
         --backend glx
-vpn connect
-run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/Media/spidey.jpg
+run feh --randomize --recursive --bg-fill ~/Pictures/Wallpapers/j2d0wlha7dh31.png.webp
 # Custom scripts
 run ~/bin/remapcaps
