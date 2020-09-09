@@ -505,8 +505,8 @@ globalkeys = my_table.join(
     --]]
     -- dmenu
     awful.key({ modkey }, "x", function ()
-            os.execute(string.format("dmenu_run -i -fn 'Monospace' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
-            beautiful.bg_normal, beautiful.fg_normal, beautiful.bg_focus, beautiful.fg_focus))
+            os.execute(string.format("dmenu_run -i -fn 'Fira Code-9' -nb '%s' -nf '%s' -sb '%s' -sf '%s'",
+            '#282836', '#e6e6e6', '#4d4d4d', '#f8f8f2'))
         end,
         {description = "show dmenu", group = "launcher"})
     -- alternatively use rofi, a dmenu-like application with more features
